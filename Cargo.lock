@@ -78,12 +78,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "3f9eec918d3f24069decb9af1554cad7c880e2da24a9afd88aca000531ab82c1"
 
 [[package]]
-name = "futures-core"
-version = "0.3.25"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "04909a7a7e4633ae6c4a9ab280aeb86da1236243a77b694a49eacd659a4bd3ac"
-
-[[package]]
 name = "gloo"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -200,7 +194,9 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 
 [[package]]
 name = "hooks"
-version = "1.0.0-alpha.14"
+version = "1.0.0-alpha.15"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "643d8a07aad30cc8dc72975413c1fb166cfea9882cc2a749b3d977b84798b9d4"
 dependencies = [
  "hooks-core",
  "hooks-derive",
@@ -210,15 +206,18 @@ dependencies = [
 
 [[package]]
 name = "hooks-core"
-version = "1.0.0-alpha.6"
+version = "1.0.0-alpha.7"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "a9805ce9b448e896cf031f515d8db82ab8e9911ca744301749d48449b3f5de08"
 dependencies = [
- "futures-core",
  "pin-project-lite",
 ]
 
 [[package]]
 name = "hooks-derive"
 version = "1.0.0-alpha.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1d349b5fb36068e85c26c8e21668e81d31c9c6a375df07e6f9933c819a49bfa"
 dependencies = [
  "hooks-derive-core",
 ]
@@ -226,6 +225,8 @@ dependencies = [
 [[package]]
 name = "hooks-derive-core"
 version = "1.0.0-alpha.4"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "883b576e62a65bc1542059dcc53c9c942acd9a2296edea3df018a0dbaae70deb"
 dependencies = [
  "darling",
  "proc-macro2",
@@ -238,7 +239,18 @@ name = "hooks-yew"
 version = "0.1.0"
 dependencies = [
  "hooks",
+ "hooks-yew-derive",
  "yew",
+]
+
+[[package]]
+name = "hooks-yew-derive"
+version = "0.1.0"
+dependencies = [
+ "darling",
+ "proc-macro2",
+ "quote",
+ "syn",
 ]
 
 [[package]]

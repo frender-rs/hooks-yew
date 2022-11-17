@@ -1,5 +1,6 @@
-# Hooks
+# hooks-yew
 
-Compile-time, async hooks in safe Rust.
+Compile-time hooks component for [yew](https://yew.rs/),
+implemented with [`hooks`](https://github.com/frender-rs/hooks).
 
-_Working in progress._
+_This crate is still in alpha._

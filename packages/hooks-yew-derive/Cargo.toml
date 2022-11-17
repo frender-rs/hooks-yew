@@ -1,19 +1,19 @@
 [package]
-name = "hooks-yew"
+name = "hooks-yew-derive"
 version = "0.1.0"
 edition = "2021"
 description = "Compile-time hook component for yew"
 license = "MIT"
-documentation = "https://docs.rs/hooks-yew"
+documentation = "https://docs.rs/hooks-yew-derive"
 repository = "https://github.com/frender-rs/hooks-yew"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
-[dependencies]
-yew = "0.19"
-hooks-yew-derive = { version = "0.1.0", path = "../hooks-yew-derive" }
+[lib]
+proc-macro = true
 
-[dependencies.hooks]
-version = "1.0.0-alpha.15"
-default-features = false
-features = ["derive"]
+[dependencies]
+proc-macro2 = "1.0.47"
+quote = "1.0.21"
+syn = "1.0.102"
+darling = "0.14.1"
