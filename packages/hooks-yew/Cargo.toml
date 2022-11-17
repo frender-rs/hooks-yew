@@ -11,7 +11,7 @@ repository = "https://github.com/frender-rs/hooks-yew"
 
 [dependencies]
 yew = "0.19"
-hooks-yew-derive = { version = "0.1.0", path = "../hooks-yew-derive" }
+hooks-yew-derive = { version = "1.0.0-alpha.1", path = "../hooks-yew-derive" }
 
 [dependencies.hooks]
 version = "1.0.0-alpha.15"

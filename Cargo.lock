@@ -245,7 +245,7 @@ dependencies = [
 
 [[package]]
 name = "hooks-yew-derive"
-version = "0.1.0"
+version = "1.0.0-alpha.1"
 dependencies = [
  "darling",
  "proc-macro2",
