@@ -14,6 +14,6 @@ yew = "0.19"
 hooks-yew-derive = { version = "1.0.0-alpha.1", path = "../hooks-yew-derive" }
 
 [dependencies.hooks]
-version = "1.0.0-alpha.15"
+version = "1.0.0-alpha.16"
 default-features = false
 features = ["derive"]

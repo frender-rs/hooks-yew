@@ -194,9 +194,9 @@ checksum = "8a9ee70c43aaf417c914396645a0fa852624801b24ebb7ae78fe8272889ac888"
 
 [[package]]
 name = "hooks"
-version = "1.0.0-alpha.15"
+version = "1.0.0-alpha.16"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "643d8a07aad30cc8dc72975413c1fb166cfea9882cc2a749b3d977b84798b9d4"
+checksum = "7f06402d983942fa6b375de2781b1d082cf0f108849956828e6f6ec463f40bea"
 dependencies = [
  "hooks-core",
  "hooks-derive",
